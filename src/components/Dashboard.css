@@ -1,0 +1,39 @@
+.dashboard-card{
+	width: 100%;
+	background-color: rgb(240,240,240);
+	color: #666;
+	margin-top: 2rem;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.dashboard-cardtitle{
+	color: #444;
+	font-weight: bold;
+	background-color: rgb(200,200,200);
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.dashboard-cardbody{
+	padding: 0.5rem 1rem;
+}
+
+.dashboard-bottom{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.dashboard-bottom > button{
+	color: white;
+	background-color: red;
+	outline: none;
+	border: 0px;
+	border-radius: 8px;
+	padding: 0.5rem 1rem;
+	font-size: 1.06rem;
+	background-image: linear-gradient(to bottom right, rgba(255,255,255,0.19), rgba(0,0,0,0.19));
+}

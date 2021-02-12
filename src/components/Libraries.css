@@ -1,0 +1,87 @@
+.newLibraryBox{
+	width: 100%;
+	margin-top: 2rem;
+	border-radius: 1px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	overflow: hidden;
+}
+
+.newLibraryBox input{
+	flex-grow: 1;
+	border: 0;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	outline: none;
+}
+
+.newLibraryBox button{
+	color: white;
+	background-color: crimson;
+	outline: none;
+	border: 0px;
+	padding: 0.5rem 1rem;
+	font-size: 1.06rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nolib{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10vh;
+	flex-direction: column;
+	color: grey;
+	font-size: 1.3rem;
+}
+
+.librarylist{
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.librarycard{
+	background-color: #999;
+	box-sizing: border-box;
+	padding: 1rem;
+	width: 48%;
+	border-radius: 1px;
+	position: relative;
+	min-height: 100px;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	/*box-shadow: inset 2px 2px 2px rgba(255,255,255,0.4),
+	 5px 5px 2px rgba(0,0,0,0.2),
+	 inset -5px -5px 2px rgba(0,0,0,0.2);*/
+}
+
+.librarycard:hover{
+	/*box-shadow: inset 2px 2px 2px rgba(255,255,255,0.4),
+	 2px 2px 2px rgba(0,0,0,0.2),
+	 inset -2px -2px 2px rgba(0,0,0,0.2);*/
+}
+
+@media only screen and (max-width: 768px){
+	.librarycard{
+		width: 100%;
+	}
+}
+
+.librarycard-name, .librarycard-count{
+	color: white;
+}
+
+.librarycard-name{
+	text-transform: capitalize;
+}
+
+.librarycard-count{
+ 	text-align: right;
+ }

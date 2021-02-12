@@ -1,0 +1,119 @@
+.signup{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('./login_background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.signup-form{
+	background-color: white;
+	width: 30%;
+	box-sizing: border-box;
+	background-color: #eee;
+	border-radius: 5px;
+	padding: 3em 20px;
+	box-shadow: 20px 20px 20px -5px rgba(0,0,0,0.4),
+		0px 0px 10px rgba(0,0,0,0.4),
+		inset 4px 4px 4px rgba(255,255,255,1),
+		inset -4px -4px 4px rgba(0,0,0,0.2);
+}
+
+.signup-form > h2{
+	color: crimson;
+	margin-top: 0px;
+	margin-bottom: 2.5rem;
+	font-size: 2rem;
+}
+
+.signup-form > h2::after{
+	content: '';
+	display: block;
+	position: relative;
+	top: 0.6rem;
+	background-color: crimson;
+	height: 5px;
+	width: 40%;
+}
+
+.signup-form > button{
+	width: 100%;
+	color: white;
+	background-color: crimson;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 0px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.signup-formGroup{
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid grey;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.signup-formGroup::after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 0%;
+	background-color: blue;
+	bottom: -1px;
+	border-radius: 10px;
+	overflow: hidden;
+	transition-duration: 1s;
+}
+
+.signup-formGroup > label{
+	flex: 0.1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.signup-formGroup > input{
+	flex: 0.9;
+	border: 0px;
+	font-size: 1.1rem;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	outline: none;
+	background-color: transparent;
+}
+
+.signup-formGroup:focus-within .login-formGroup::after{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1100px){
+	.signup{
+		height: 100vh;
+		width: 100%;
+	}
+
+	.signup-form{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.signup{
+		height: 100vh;
+		width: 100%;
+	}
+
+	.signup-form{
+		width: 90%;
+	}
+}

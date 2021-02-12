@@ -1,0 +1,129 @@
+.uploadingbox{
+	width: 100%;
+	margin-top: 1rem;
+	background-color: rgb(200,200,200);
+	border-radius: 8px;
+	padding: 1rem;
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.uploadingbox-left{
+	display: flex;
+	flex-direction: column;
+}
+
+.inputsection{
+	background-color: transparent;
+}
+
+.choosefilebtn{
+
+}
+
+.uploadbtn{
+	border: 0px;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.upload-addtoplaylist{
+	position: relative;
+	display: inline-block;
+	padding: 0.5rem 0rem;
+}
+
+.upload-addtoplaylist .btn{
+	cursor: pointer;
+	background-color: rgb(240,240,240);
+	border-radius: 1px;
+	color: #333;
+	padding: 0.5rem 1rem;
+}
+
+.upload-addtoplaylist .dropdown{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(240,240,240);
+	border-radius: 1px;
+	overflow: hidden;
+	z-index: 50;
+	padding: 0.5rem;
+}
+
+.upload-addtoplaylist .dropdownItems{
+	cursor: pointer;
+	padding: 0.2rem 1rem;
+	transition-duration: 0.2s;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	color: black;
+}
+
+.upload-addtoplaylist .dropdownItems:hover{
+	background-color: grey;
+	color: white;
+}
+
+.dropdown .close{
+	color: grey; 
+	cursor: pointer;
+	text-align: right;
+}
+
+.dropdown .close:hover{
+	color: red; 
+}
+
+.dropdownAdd{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 1.2rem;
+	margin-top: 0.2rem;
+}
+
+.dropdownAdd > input{
+	border-radius: 5px;
+	border: 0.5 solid grey;
+	font-size: 1.2rem;
+	padding: 0.1rem 1rem;
+}
+
+@media only screen and (max-width: 768px){
+	.dropdownAdd > input{
+		width: 40px;
+	}
+}
+
+.dropdownAdd > span{
+	cursor: pointer;
+}
+
+.upload-loading{
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+	/*animation-direction: forwards;*/
+	animation-timing-function: ease-out;
+	animation-delay: 0.3s;
+	transform-origin: center center;
+	height: 3rem;
+	width: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	color: crimson;
+}
+
+@keyframes rotate {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(180deg);;}
+}

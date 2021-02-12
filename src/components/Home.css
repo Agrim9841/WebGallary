@@ -1,0 +1,148 @@
+.home{
+	box-sizing: border-box;
+}
+
+.home-imagelist{
+	columns: 3;
+	column-gap: 3px;
+}
+
+.imagecard{
+	/*width: 100%;*/
+	border-radius: 1px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.imagecard-overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 0;
+	transition-duration: 0.2s;
+}
+
+.imagecard:hover .imagecard-overlay{
+	opacity: 1;
+}
+
+.imagecard-view, .imagecard-library{
+	position: absolute;
+	top: 10px;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: white;
+	background-color: crimson;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	font-size: 1rem;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.imagecard-view:hover, .imagecard-library:hover{
+	box-shadow: 0px 0px 5px crimson;
+}
+
+.imagecard-view{
+	left: 10px;
+}
+
+.imagecard-library{
+	right: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+.noimg{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10vh;
+	flex-direction: column;
+	color: grey;
+}
+
+.redirectUpload{
+	color: red;
+	cursor: pointer;
+}
+
+.libdetail-card{
+	width: 100%;
+	background-color: rgb(240,240,240);
+	color: #666;
+	margin-top: 2rem;
+	border-radius: 1px;
+	overflow: hidden;
+}
+
+.libdetail-cardtitle{
+	overflow: hidden;
+	color: #444;
+	font-weight: bold;
+	background-color: rgb(200,200,200);
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: baseline;
+}
+
+.libdetail-cardbody{
+	padding: 0.5rem 1rem;
+}
+
+.libdetail-cardbottom{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.lib-deletebtn{
+	background-color: crimson;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 1px;
+	color: white;
+	cursor: pointer;
+}
+
+.libdetail-imagelist{
+	margin-top: 2rem;
+}
+
+.searchlibrarylist{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.searchlibrarylist .librarycard{
+	width: 48%;
+	background-color: grey;
+	box-shadow: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+
+.searchlibrarylist .librarycard:hover{
+	box-shadow: none;
+}
+
+@media only screen and (max-width: 768px){
+	.searchlibrarylist .librarycard{
+		width: 100%;
+		font-size: 1rem;
+	}
+}
